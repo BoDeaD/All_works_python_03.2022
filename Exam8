@@ -1,0 +1,33 @@
+'''
+Задание 14
+'''
+while (True):
+ machines = {
+
+ }
+ selection = int(input("Введите действие: \nДобавление машины в список - 1\nУдаление машины из списка - 2\nИзменение машины в списке - 3\n    To exit enter this key - 0094352 \n Введите -  "))
+ if selection == ("0094352"):
+     print("program is exit")
+     break
+ if selection == 1:
+    machin = input("Ввдите машину - ")
+    year = input("год производства - ")
+    runner = input("пробег - ")
+    mark = input("марка - ")
+    model = input("модель - ")
+    cost = input("цена  - ")
+    machines[machin] = f"год производства - {year},пробег - {runner},марка - {mark},модель - {model},цена  - {cost}"
+ if selection == 2:
+    delete_object = input("Введите обьект удоления - ")
+    del machines[delete_object]
+ if selection == 3:
+    machin = input("Ввдите машину - ")
+    year = input("год производства - ")
+    runner = input("пробег - ")
+    mark = input("марка - ")
+    model = input("модель - ")
+    cost = input("цена  - ")
+    machines[machin] = f"год производства - {year},пробег - {runner},марка - {mark},модель - {model},цена  - {cost}"
+ else:
+     print("Eror")
+     break
